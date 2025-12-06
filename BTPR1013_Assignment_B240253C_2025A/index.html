@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Assignment B240253C</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <ul>
+                <li>
+                    <a href="#"><i class='bx bx-menu' > Content</i></a>
+                    <ul>
+                        <li><a href = "#introduction">Introduction</a></li>
+                        <li><a href = "#reason">Reason for Emergence</a></li>
+                        <li><a href = "#impacts">Shaping Transportation Industry</a></li>
+                        <li><a href = "#summary-content">Summary</a></li>
+                        <li><a href = "#summary-contact">The Team</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#banner-content">Home <i class='bx bxs-home' ></i></a></li>
+                <li><a href="#summary-contact">About Us <i class='bx bxs-group'></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Banner Section -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Connected Autonomous Vehicles(CAVs)</h1>
+            <h3>Autonomous Driving & Advanced Connectivity</h3>
+            <p id="scroll-down">
+                <a href="#introduction">
+                    <heavy>E X P L O R E<br><i class='bx bx-down-arrow-alt'></i></heavy>
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="introduction" id="introduction">
+        <h2>Introduction</h2>
+        <p>Connected Autonomous Vehicles (CAVs) are a transformative innovation in the transportation industry,
+           combining autonomous driving capabilities with advanced connectivity features. These vehicles can communicate
+           with each other, infrastructure, and other road<br> users to enhance safety, efficiency, and convenience.
+        </p>
+        <br>
+        <img src="Image1.jpg" alt="CAVs Image" class="CAV" id="CAV">
+        <br>
+        <p>
+            The integration of technologies such as artificial intelligence (AI), sensors,
+            and vehicle-to-everything (V2X) communication is driving the development and 
+            deployment of CAVs, promising a future where transportation is smarter and more sustainable.
+        </p>
+    </section>
+
+    <section class="reason" id="reason">
+        <h2>Reason for Emergence</h2>
+        <div class="carousel">
+            <div class="slide active" style="background-image: url(safetyconcern.webp);">
+                <div class="overlay-text">
+                    <h3>Safety Concern</h3>
+                    <p>
+                        Human error is a leading cause of traffic accidents, and it can lead to fatalities. CAVs aim 
+                        to reduce accidents by eliminating human error through advanced driver-assistance
+                        systems (ADAS) and autonomous driving technologies.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide" style="background-image: url('technology.jpg');">
+                <div class="overlay-text">
+                    <h3>Technology Advancements</h3>
+                    <p>
+                        Rapid progress in AI, machine learning, and sensor technologies has made it possible 
+                        to develop vehicles that can navigate complex environments autonomously. Improvements in
+                        connectivity infrastructure, such as 5G networks, enable real-time data exchange between 
+                        vehicles and their surroundings. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide" style="background-image: url('environment.webp');">
+                <div class="overlay-text">
+                    <h3>Environmental Impact</h3>
+                    <p>
+                        CAVs can contribute to reducing emissions by optimizing driving patterns and integrating 
+                        with electric vehicle (EV) technology. This aligns with global efforts to combat climate 
+                        change and promote sustainable transportation.
+                    </p>
+                </div>
+            </div>
+            
+            <button class="arrow left" onclick="prevSlide()">❮</button>
+            <button class="arrow right" onclick="nextSlide()">❯</button>
+            
+            <!-- Breadcrumb / Dots -->
+            <div class="dots">
+              <span class="dot active" onclick="showSlide(0)"></span>
+              <span class="dot" onclick="showSlide(1)"></span>
+              <span class="dot" onclick="showSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="impacts" id="impacts">
+        <h2>Shaping Transportation Industry</h2>
+        <div class="box-container">
+            <div class="box">
+              <img src="safety.jpg" alt="Image 1">
+              <h3>Safety Improvement</h3>
+              <p>By using sensors, cameras, and AI, these vehicles can detect and respond to hazards more quickly and accurately than human drivers.</p>
+            </div>
+            <div class="box">
+              <img src="traffic.webp" alt="Image 2">
+              <h3>Traffic Efficiency</h3>
+              <p>By communicating with each other and traffic management systems, CAVs can optimize traffic flow, reduce congestion, and improve overall transportation efficiency.</p>
+            </div>
+            <div class="box">
+              <img src="accessibility.webp" alt="Image 3">
+              <h3>Enhance Accessibility</h3>
+              <p>CAVs can provide greater mobility options for individuals who are unable to drive, such as the elderly or disabled.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="summary">
+        <div class="summary-content" id="summary-content">
+            <h2>Summary</h2>
+            <p>By addressing safety, efficiency, environmental impact, and accessibility,
+               Connected Autonomous Vehicles (CAVs) are poised to revolutionize the transportation industry,
+               making it safer, more efficient, and more sustainable.
+            </p>
+            <button id="toggleButton" class="toggle-btn" onclick="toggleText()">Fact</button>
+
+            <div id="textBox" class="hidden-text">
+                A total of around 600,000 road accident cases have been recorded throughout 2023, and in that time 6,443 
+                lives were lost to road accidents, which translates to an average of 18 deaths every day last year. Of these 
+                casualties, 65% were motorcyclists, comprised of both riders and pillion riders, aged 16 to 35 years.
+                <br>
+                <a href="https://paultan.org/2024/05/17/road-accidents-in-malaysia-in-2023-600000-cases-recorded-6443-deaths-65-involved-motorcyclists/" target="_blank">
+                    Visit to read more.
+                </a>
+            </div>
+        </div>
+
+        <div class="summary-contact" id="summary-contact">
+            <h2>The Team</h2>
+            <p>Calvin Teo Yee Jie | B240253C<p>
+            <p>B240253C@sc.edu.my</p>
+            <p>+6019-9698726</p>
+            <p>Web Designer</p>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+     <div id="btnToTop" class="btnToTop">
+        <button id="back-to-top" class="back-to-top">
+            <i class='bx bx-up-arrow-alt'></i>
+        </button>
+    
+     </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; Copyright 2025 B240253C | Site designed by Calvin</p>
+        <!-- Footer content goes here -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
